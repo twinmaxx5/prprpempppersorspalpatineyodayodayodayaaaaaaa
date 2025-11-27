@@ -1,0 +1,64 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>yodayodayodayaaaaaaaaaa</title>
+  <style>
+    body {
+      background: url('https://upload.wikimedia.org/wikipedia/commons/e/e1/Rotating_earth_animated.gif?20201022124721') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+      font-family: 'Orbitron', sans-serif;
+      text-align: center;
+      padding-top: 100px;
+    }
+    input[type="password"] {
+      padding: 10px;
+      font-size: 16px;
+      border-radius: 5px;
+      border: none;
+    }
+    button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      font-size: 18px;
+      border: none;
+      border-radius: 5px;
+      background-color: #RRGGBBAA
+      color: black;
+      cursor: pointer;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <h1> Welcome to :'s stuff 🐱</h1>
+  <p> Just a portal </p>
+  <input type="password" id="passwordInput" placeholder="Enter password">
+  <button id="Don't Click" onclick="openGame()">Don't Click The Button</button>
+
+  <script>
+   function openGame() {
+var win = window.open()
+var url = "https://jsitor.com/preview/A2WF4l2Oy9-"
+var iframe = win.document.createElement('iframe')
+iframe.style.width = "100%";
+iframe.style.height = "100%";
+iframe.style.border = "none";
+iframe.src = url
+win.document.body.appendChild(iframe)
+}
+    const correctPassword = ":isthekingofrebellionsorespecthimorelse"; // You can change this
+    const input = document.getElementById("passwordInput");
+    const button = document.getElementById("lunchButton");
+
+    input.addEventListener("input", () => {
+      if (input.value === correctPassword) {
+        button.style.display = "inline-block";
+      } else {
+        button.style.display = "none";
+      }
+    });
+  </script>
+</body>
+</html>
